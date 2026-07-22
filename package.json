@@ -1,0 +1,24 @@
+{
+  "name": "@kd/design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KD Design System — React components over the kd.css class system. One mark, one blue, one typeface.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --format=esm --outfile=dist/index.js --external:react --external:react-dom --external:react/jsx-runtime --jsx=automatic && tsc -p tsconfig.json --emitDeclarationOnly && cat css/tokens.css css/kd.css > dist/kd.css"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "esbuild": "^0.24.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.7.2"
+  }
+}

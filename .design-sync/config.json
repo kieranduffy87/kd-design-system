@@ -1,0 +1,15 @@
+{
+  "projectId": "966cc961-8399-4709-9e67-6f4238db8e0b",
+  "pkg": "@kd/design-system",
+  "globalName": "KD",
+  "shape": "package",
+  "buildCmd": "npm run build",
+  "cssEntry": "dist/kd.css",
+  "extraFonts": [
+    "fonts/instrument-sans.css"
+  ],
+  "provider": {
+    "component": "KdProvider"
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
