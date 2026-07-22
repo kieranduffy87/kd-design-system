@@ -4,11 +4,11 @@
    ============================================================ */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 body {
   background: var(--kd-bg); color: var(--kd-text);
   font-family: var(--kd-font); font-size: var(--kd-fs-body); line-height: var(--kd-lh-body);
-  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; overflow-x: clip;
   transition: background var(--kd-t-theme) ease, color var(--kd-t-theme) ease;
 }
 ::selection { background: var(--kd-blue); color: #fff; }
@@ -241,6 +241,12 @@ pre.code .c { color: #6b7280; } pre.code .k { color: #7aa2ff; } pre.code .v { co
 .docs-foot .cols a:hover { color: var(--kd-blue); }
 .docs-foot .cols .colhead { color: #eceef2; font-weight: 600; margin-bottom: 0.3rem; }
 .docs-foot .cols .col { display: flex; flex-direction: column; gap: 0.45rem; }
+
+/* pill-nav demo: scrolls inside its frame, never the page */
+.demo-nav-frame { padding: 3rem 1rem; }
+.demo-nav-scroll { display: grid; place-items: center; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 0.4rem; }
+.demo-nav-scroll .kd-pillnav { flex-wrap: nowrap; width: max-content; }
+.demo-nav-frame .spec-caption { text-align: center; margin-top: 1.4rem; max-width: 60ch; margin-inline: auto; }
 
 /* toast */
 #toast {
