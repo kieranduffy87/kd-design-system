@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KD Design System — Brand guidelines for Kieran Duffy</title>
+<meta name="description" content="The KD design system: brand foundations, colour, typography, spacing, motion, components, imagery, voice and accessibility for the Kieran Duffy brand.">
+<script>(function(){var t;try{t=localStorage.getItem('kd-theme')}catch(e){}document.documentElement.setAttribute('data-theme', t==='dark'?'dark':'light');})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/kd.css">
+<link rel="stylesheet" href="css/docs.css">
+<link rel="icon" type="image/svg+xml" href="assets/kd-icon-dark.svg">
+</head>
+<body class="kd-scope">
+<a class="kd-skip-link" href="#foundations">Skip to content</a>
+
+<header class="docs-nav">
+  <nav class="kd-pillnav">
+    <a class="brand" href="#top" aria-label="KD Design System home">
+      <svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg>
+    </a>
+    <a class="kd-pillnav__link" href="#mark">Mark</a>
+    <a class="kd-pillnav__link" href="#colour">Colour</a>
+    <a class="kd-pillnav__link" href="#type">Type</a>
+    <a class="kd-pillnav__link" href="#components">Components</a>
+    <a class="kd-pillnav__link" href="#voice">Voice</a>
+    <span class="ver">v1.0</span>
+    <button class="kd-theme-toggle" id="themeToggle" aria-label="Switch between light and dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="docs-hero">
+  <p class="kd-label kicker">KD · Design System · v1.0 · 2026</p>
+  <h1 class="kd-hero-title">A brand built to <em>perform.</em></h1>
+  <p class="sub">The single source of truth for the Kieran Duffy brand: one mark, one blue, one typeface — and the rules that keep every touchpoint clear, consistent and easy to choose.</p>
+  <div class="hero-index">
+    <a class="kd-chip" href="#foundations">01 Foundations</a>
+    <a class="kd-chip" href="#mark">02 The Mark</a>
+    <a class="kd-chip" href="#colour">03 Colour</a>
+    <a class="kd-chip" href="#type">04 Typography</a>
+    <a class="kd-chip" href="#space">05 Space &amp; Layout</a>
+    <a class="kd-chip" href="#motion">06 Motion</a>
+    <a class="kd-chip" href="#components">07 Components</a>
+    <a class="kd-chip" href="#imagery">08 Imagery</a>
+    <a class="kd-chip" href="#voice">09 Voice &amp; Tone</a>
+    <a class="kd-chip" href="#a11y">10 Accessibility</a>
+    <a class="kd-chip" href="#usage">11 Using the System</a>
+  </div>
+  <svg class="hero-mark" viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg>
+</section>
+
+<!-- ============ 01 FOUNDATIONS ============ -->
+<section class="docs-section" id="foundations">
+  <p class="sec-num">01 — Foundations</p>
+  <h2 class="kd-title kd-reveal">Principles before <em>pixels.</em></h2>
+  <p class="sec-lede kd-reveal">KD is the brand of a designer who improves how businesses work, not just how they look. Every design decision in this system exists to prove that promise. When in doubt, come back to these four principles.</p>
+
+  <div class="doc-grid sub-block">
+    <div class="kd-card kd-card--lift kd-reveal">
+      <p class="kd-label" style="color: var(--kd-accent-text);">Principle 01</p>
+      <h3 class="kd-subhead" style="margin: 0.6rem 0;">Clarity is the product</h3>
+      <p class="kd-muted">Remove ambiguity before adding decoration. If an element doesn't make the message clearer, it doesn't ship. Generous space, one idea per section, copy that says what it means.</p>
+    </div>
+    <div class="kd-card kd-card--lift kd-reveal">
+      <p class="kd-label" style="color: var(--kd-accent-text);">Principle 02</p>
+      <h3 class="kd-subhead" style="margin: 0.6rem 0;">One blue, used with intent</h3>
+      <p class="kd-muted">Electric Blue is the only brand colour. It marks what matters: the accented word, the active state, the call to action. Scarcity is what gives it power — never dilute it.</p>
+    </div>
+    <div class="kd-card kd-card--lift kd-reveal">
+      <p class="kd-label" style="color: var(--kd-accent-text);">Principle 03</p>
+      <h3 class="kd-subhead" style="margin: 0.6rem 0;">Editorial, not corporate</h3>
+      <p class="kd-muted">The brand reads like a well-set magazine: large confident headlines, quiet uppercase labels, warm paper backgrounds. Pill geometry softens the grid without making it playful.</p>
+    </div>
+    <div class="kd-card kd-card--lift kd-reveal">
+      <p class="kd-label" style="color: var(--kd-accent-text);">Principle 04</p>
+      <h3 class="kd-subhead" style="margin: 0.6rem 0;">Performance is non-negotiable</h3>
+      <p class="kd-muted">Low-carbon, fast, accessible. One typeface, system-light CSS, motion that respects <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">prefers-reduced-motion</code>. The brand must live what it sells: efficiency without compromise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 THE MARK ============ -->
+<section class="docs-section" id="mark">
+  <p class="sec-num">02 — The Mark</p>
+  <h2 class="kd-title kd-reveal">Two letters, one <em>chevron.</em></h2>
+  <p class="sec-lede kd-reveal">The KD mark fuses the K and D into a single directional form: an ink wedge meeting an electric blue chevron, always pointing forward. It is drawn on a 18.62 × 11.73 grid and is never redrawn, re-proportioned or re-coloured outside the approved variants.</p>
+
+  <div class="sub-block kd-reveal">
+    <div class="mark-stage">
+      <svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KD mark, primary"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg>
+    </div>
+    <p class="spec-caption">Primary mark — Ink + Electric Blue. The ink half inherits the theme's text colour; the blue half never changes. <code>assets/kd-mark.svg</code></p>
+  </div>
+
+  <div class="sub-block">
+    <h3>Variants</h3>
+    <p class="sub-note">Four approved renderings. The duotone mark is the default everywhere; fall back to mono only when colour reproduction is limited (engraving, single-colour print, favicons at tiny sizes).</p>
+    <div class="mark-variants">
+      <div>
+        <div class="mark-stage"><svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-label="Duotone on light"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#0e0f12" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+        <p class="spec-caption">Duotone / light surfaces</p>
+      </div>
+      <div>
+        <div class="mark-stage on-ink"><svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-label="Duotone on dark"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#eceef2" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+        <p class="spec-caption">Duotone / dark surfaces</p>
+      </div>
+      <div>
+        <div class="mark-stage"><svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-label="Mono ink"><polygon fill="#0e0f12" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#0e0f12" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+        <p class="spec-caption">Mono ink / one-colour uses</p>
+      </div>
+      <div>
+        <div class="mark-stage on-blue"><svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-label="Mono white on blue"><polygon fill="#ffffff" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#ffffff" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+        <p class="spec-caption">Mono white / on Electric Blue</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Clearspace &amp; minimum size</h3>
+      <p class="sub-note">Keep a protected zone of <strong>half the mark's height</strong> on all sides. Minimum height: <strong>14px digital</strong> (as used in the site footer), <strong>5mm print</strong>. Below that, use the single-glyph favicon files.</p>
+      <div class="clearspace">
+        <div class="zone">
+          <svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg>
+        </div>
+        <span class="cs-note">clearspace = ½ × mark height</span>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Misuse</h3>
+      <p class="sub-note">The fastest way to weaken the mark is to "improve" it. Don't.</p>
+      <div class="dont-grid">
+        <div class="dont">
+          <div class="stage"><svg viewBox="0 0 18.62 11.73" style="transform: rotate(14deg);" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+          <p><b>Don't</b> rotate or flip the mark.</p>
+        </div>
+        <div class="dont">
+          <div class="stage"><svg viewBox="0 0 18.62 11.73" style="transform: scaleX(1.6);" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+          <p><b>Don't</b> stretch or re-proportion it.</p>
+        </div>
+        <div class="dont">
+          <div class="stage"><svg viewBox="0 0 18.62 11.73" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#ff7a59" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#21d4b4" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+          <p><b>Don't</b> recolour outside approved variants.</p>
+        </div>
+        <div class="dont">
+          <div class="stage"><svg viewBox="0 0 18.62 11.73" style="filter: drop-shadow(3px 5px 4px rgba(0,0,0,0.5));" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon class="ink" points="0 0 0 11.72 6 5.86 0 0"/></svg></div>
+          <p><b>Don't</b> add shadows, outlines or effects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Motion signature</h3>
+    <p class="sub-note">The mark has one signature animation — the two halves slide in from opposite sides and settle together (the site preloader). Use it only as an opening moment, never on loop in UI. In expressive contexts (showreels, playground) the mark may spin on the Y axis with a blue glow.</p>
+    <pre class="code"><span class="c">/* preloader: halves converge with the house ease */</span>
+.pre-blue { animation: pre-in-right 0.9s 0.15s <span class="k">var(--kd-ease)</span> both; }
+.pre-ink  { animation: pre-in-left  0.9s 0.15s <span class="k">var(--kd-ease)</span> both; }</pre>
+  </div>
+</section>
+
+<!-- ============ 03 COLOUR ============ -->
+<section class="docs-section" id="colour">
+  <p class="sec-num">03 — Colour</p>
+  <h2 class="kd-title kd-reveal">One blue. Warm paper. <em>Deep ink.</em></h2>
+  <p class="sec-lede kd-reveal">The palette is deliberately narrow: a single electric blue over calm neutral fields. Neutrals do the layout work; blue does the pointing. Click any swatch to copy its value.</p>
+
+  <div class="sub-block">
+    <h3>Brand core</h3>
+    <div class="swatch-grid">
+      <button class="swatch hero-swatch" data-copy="#0339F8">
+        <i style="background: #0339f8;"></i>
+        <span class="meta"><strong>KD Electric Blue</strong><span>#0339F8 · RGB 3 57 248</span><em>The only brand colour. Accented words, CTAs, active states, focus rings. Never tinted, never in gradients within UI.</em></span>
+      </button>
+      <button class="swatch" data-copy="#0A0B0E">
+        <i style="background: #0a0b0e;"></i>
+        <span class="meta"><strong>Scrim Ink</strong><span>#0A0B0E</span><em>Media scrims &amp; footer. Fixed in both themes.</em></span>
+      </button>
+      <button class="swatch" data-copy="#F4F4F6">
+        <i style="background: #f4f4f6; border-bottom: 1px solid var(--kd-line);"></i>
+        <span class="meta"><strong>Paper White</strong><span>#F4F4F6</span><em>Text over Scrim Ink and hero media.</em></span>
+      </button>
+      <button class="swatch" data-copy="#C62F2F">
+        <i style="background: #c62f2f;"></i>
+        <span class="meta"><strong>Signal Red</strong><span>#C62F2F</span><em>Errors and destructive states only.</em></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Light theme — "Warm Paper"</h3>
+      <p class="sub-note">The default. Warm, editorial, gallery-like.</p>
+      <div class="swatch-grid">
+        <button class="swatch" data-copy="#F6F5F1"><i style="background: #f6f5f1; border-bottom: 1px solid var(--kd-line);"></i><span class="meta"><strong>Background</strong><span>#F6F5F1</span></span></button>
+        <button class="swatch" data-copy="#FFFFFF"><i style="background: #ffffff; border-bottom: 1px solid var(--kd-line);"></i><span class="meta"><strong>Surface</strong><span>#FFFFFF</span></span></button>
+        <button class="swatch" data-copy="#ECEAE4"><i style="background: #eceae4;"></i><span class="meta"><strong>Surface 2</strong><span>#ECEAE4</span></span></button>
+        <button class="swatch" data-copy="#0E0F12"><i style="background: #0e0f12;"></i><span class="meta"><strong>Text</strong><span>#0E0F12</span></span></button>
+        <button class="swatch" data-copy="#585E69"><i style="background: #585e69;"></i><span class="meta"><strong>Muted</strong><span>#585E69</span></span></button>
+        <button class="swatch" data-copy="rgba(14,15,18,0.14)"><i style="background: linear-gradient(90deg, rgba(14,15,18,0.14), rgba(14,15,18,0.14)), #f6f5f1;"></i><span class="meta"><strong>Line</strong><span>ink @ 14%</span></span></button>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Dark theme — "Night Studio"</h3>
+      <p class="sub-note">Activated via <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">[data-theme="dark"]</code>. Same hierarchy, inverted values.</p>
+      <div class="swatch-grid">
+        <button class="swatch" data-copy="#08090B"><i style="background: #08090b;"></i><span class="meta"><strong>Background</strong><span>#08090B</span></span></button>
+        <button class="swatch" data-copy="#101216"><i style="background: #101216;"></i><span class="meta"><strong>Surface</strong><span>#101216</span></span></button>
+        <button class="swatch" data-copy="#16181D"><i style="background: #16181d;"></i><span class="meta"><strong>Surface 2</strong><span>#16181D</span></span></button>
+        <button class="swatch" data-copy="#ECEEF2"><i style="background: #eceef2; border-bottom: 1px solid var(--kd-line);"></i><span class="meta"><strong>Text</strong><span>#ECEEF2</span></span></button>
+        <button class="swatch" data-copy="#8F939D"><i style="background: #8f939d;"></i><span class="meta"><strong>Muted</strong><span>#8F939D</span></span></button>
+        <button class="swatch" data-copy="rgba(236,238,242,0.13)"><i style="background: linear-gradient(90deg, rgba(236,238,242,0.13), rgba(236,238,242,0.13)), #08090b;"></i><span class="meta"><strong>Line</strong><span>paper @ 13%</span></span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Proportion</h3>
+    <p class="sub-note">A page should feel neutral with one electric moment. Roughly: <strong>90% neutral field, 8% ink media, 2% blue</strong>. If blue covers more than that, something is shouting.</p>
+    <div class="ratio-bar" aria-hidden="true">
+      <div style="flex: 68; background: var(--kd-bg); color: var(--kd-muted);">Background</div>
+      <div style="flex: 22; background: var(--kd-surface-2); color: var(--kd-muted);">Surfaces</div>
+      <div style="flex: 8; background: #0a0b0e; color: #9aa0ab;">Ink</div>
+      <div style="flex: 4; background: #0339f8; color: #fff;">Blue</div>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Expressive accents</h3>
+    <p class="sub-note">Coral and teal exist for <strong>illustration, data visualisation and playground experiments only</strong> — animated mesh blobs, chart series, generative art. They never appear in UI chrome, buttons or brand communication.</p>
+    <div class="doc-grid-3">
+      <button class="swatch" data-copy="#FF7A59"><i style="background: #ff7a59;"></i><span class="meta"><strong>Mesh Coral</strong><span>#FF7A59</span></span></button>
+      <button class="swatch" data-copy="#21D4B4"><i style="background: #21d4b4;"></i><span class="meta"><strong>Mesh Teal</strong><span>#21D4B4</span></span></button>
+      <button class="swatch" data-copy="#01145A"><i style="background: linear-gradient(160deg, #0339f8, #01145a);"></i><span class="meta"><strong>Deep Blue ramp</strong><span>#0339F8 → #01145A</span><em>Placeholder art &amp; footer gradients only.</em></span></button>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Contrast</h3>
+    <p class="sub-note">Measured against WCAG 2.1. The one trap: Electric Blue as small text on dark backgrounds — reserve it for large display accents and labels there, or use Paper White.</p>
+    <div class="table-scroll spec-frame on-bg">
+      <table class="spec-table">
+        <thead><tr><th>Pairing</th><th>Ratio</th><th>Verdict</th><th>Use for</th></tr></thead>
+        <tbody>
+          <tr><td>Text #0E0F12 on Paper #F6F5F1</td><td>≈ 16.9:1</td><td class="pass">AAA</td><td>Everything</td></tr>
+          <tr><td>Muted #585E69 on Paper #F6F5F1</td><td>≈ 6.0:1</td><td class="pass">AA</td><td>Supporting copy</td></tr>
+          <tr><td>Blue #0339F8 on White #FFFFFF</td><td>≈ 7.1:1</td><td class="pass">AAA</td><td>Text &amp; accents</td></tr>
+          <tr><td>Blue #0339F8 on Paper #F6F5F1</td><td>≈ 6.5:1</td><td class="pass">AA</td><td>Accented words, links</td></tr>
+          <tr><td>White #FFFFFF on Blue #0339F8</td><td>≈ 7.1:1</td><td class="pass">AAA</td><td>Buttons, CTAs</td></tr>
+          <tr><td>Text #ECEEF2 on Night #08090B</td><td>≈ 17.5:1</td><td class="pass">AAA</td><td>Everything (dark)</td></tr>
+          <tr><td>Blue #0339F8 on Night #08090B</td><td>≈ 2.9:1</td><td class="care">Large only</td><td>Display accents ≥ 24px, never body text</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 TYPOGRAPHY ============ -->
+<section class="docs-section" id="type">
+  <p class="sec-num">04 — Typography</p>
+  <h2 class="kd-title kd-reveal">One typeface, many <em>voices.</em></h2>
+  <p class="sec-lede kd-reveal">Everything is set in <strong style="color: var(--kd-text);">Instrument Sans</strong> — display, body, labels. Hierarchy comes from size, weight and tracking, not from mixing families. Display sizes tighten to −0.02em at weight 500; labels open up to +0.14em in uppercase.</p>
+
+  <div class="sub-block kd-reveal">
+    <div class="spec-frame">
+      <div class="type-row"><span class="t-label">Hero</span><span class="t-sample kd-hero-title" style="font-size: clamp(2.2rem, 5vw, 4.4rem);">Built to perform</span><span class="t-spec">clamp(2.8–6.8rem) · 500 · −0.02em · lh 1</span></div>
+      <div class="type-row"><span class="t-label">Display</span><span class="t-sample kd-display" style="font-size: clamp(1.9rem, 4.2vw, 3.6rem);">Brands. Built to <em>perform.</em></span><span class="t-spec">clamp(2.6–5.5rem) · 500 · lh 1.04</span></div>
+      <div class="type-row"><span class="t-label">Title</span><span class="t-sample kd-title" style="font-size: clamp(1.6rem, 3.4vw, 2.8rem);">Selected <em>Work</em></span><span class="t-spec">clamp(2.2–4rem) · 500</span></div>
+      <div class="type-row"><span class="t-label">Lede</span><span class="t-sample kd-lede" style="font-size: clamp(1.15rem, 2vw, 1.5rem);">Ritual in every cup, told at every touchpoint.</span><span class="t-spec">clamp(1.35–1.9rem) · 500 · lh 1.4</span></div>
+      <div class="type-row"><span class="t-label">Body</span><span class="t-sample" style="font-size: 1.0625rem;">Clearer communication, better experiences, stronger performance.</span><span class="t-spec">1.0625rem · 400 · lh 1.65</span></div>
+      <div class="type-row"><span class="t-label">Label</span><span class="t-sample kd-label">I design · Brand Identity · Est. 2011</span><span class="t-spec">0.72rem · 500 · +0.14em · caps</span></div>
+      <div class="type-row"><span class="t-label">Tag</span><span class="t-sample"><span class="kd-tag">Brand Identity</span> <span class="kd-tag">Digital Design</span></span><span class="t-spec">0.62rem · +0.12em · caps</span></div>
+    </div>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div class="spec-frame">
+      <p class="kd-label" style="margin-bottom: 1rem;">The accent em</p>
+      <p class="kd-heading" style="font-size: clamp(1.8rem, 3.4vw, 2.8rem);">Let's start your <em>journey.</em></p>
+      <p class="spec-caption" style="margin-top: 1.4rem;">The brand's typographic signature: in any display heading, the single most important word is wrapped in <code>&lt;em&gt;</code> and renders in Electric Blue, upright (never italic). One accent per heading, usually the last word.</p>
+    </div>
+    <div class="spec-frame">
+      <p class="kd-label" style="margin-bottom: 1rem;">Weights</p>
+      <p style="font-size: 1.6rem; font-weight: 400; letter-spacing: -0.01em;">Regular 400 — body copy</p>
+      <p style="font-size: 1.6rem; font-weight: 500; letter-spacing: -0.02em;">Medium 500 — all display</p>
+      <p style="font-size: 1.6rem; font-weight: 600; letter-spacing: -0.01em;">Semibold 600 — buttons, card titles</p>
+      <p style="font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em;">Bold 700 — case-study client names</p>
+      <p class="spec-caption" style="margin-top: 1.4rem;">Fallback stack: <code>"Instrument Sans", "Helvetica Neue", Arial, sans-serif</code>. Loaded from Google Fonts as a variable font (ital + wght 400–700).</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Setting rules</h3>
+    <div class="dodont">
+      <div class="col yes">
+        <h4>Do</h4>
+        <ul>
+          <li><strong>Balance headlines</strong> — <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">text-wrap: balance</code>, max ~18ch for hero statements.</li>
+          <li><strong>Cap measure</strong> — body 62ch, ledes 30em, supporting copy 52ch.</li>
+          <li><strong>Colour hierarchy</strong> — headings in Text, paragraphs in Muted.</li>
+          <li><strong>Use sentence case</strong> everywhere except Label/Tag roles.</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h4>Don't</h4>
+        <ul>
+          <li>Introduce a second typeface — ever.</li>
+          <li>Use true italics for emphasis; the blue <strong>em</strong> is the emphasis system.</li>
+          <li>Set display sizes at weight 400 or 700 — display is always 500.</li>
+          <li>Track body copy; tracking belongs to labels and tags only.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 SPACE & LAYOUT ============ -->
+<section class="docs-section" id="space">
+  <p class="sec-num">05 — Space &amp; Layout</p>
+  <h2 class="kd-title kd-reveal">Room to <em>breathe.</em></h2>
+  <p class="sec-lede kd-reveal">Layout runs on two fluid values — the page gutter and the section rhythm — plus a small fixed scale for everything inside a component. Corners are soft (18px), interactive elements are full pills (100px).</p>
+
+  <div class="sub-block">
+    <h3>Core rhythm</h3>
+    <div class="table-scroll spec-frame on-bg">
+      <table class="spec-table">
+        <thead><tr><th>Token</th><th>Value</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td><code>--kd-pad</code></td><td><code>clamp(1.25rem, 4vw, 4rem)</code></td><td>Page gutter — every section's horizontal padding</td></tr>
+          <tr><td><code>--kd-section</code></td><td><code>clamp(4rem, 9vw, 8rem)</code></td><td>Vertical rhythm between major sections</td></tr>
+          <tr><td><code>--kd-section-sm</code></td><td><code>clamp(2.5rem, 5vw, 4rem)</code></td><td>Case-study &amp; sub-section rhythm</td></tr>
+          <tr><td><code>--kd-gap</code> / <code>--kd-gap-lg</code></td><td><code>1.5rem / 2.5rem</code></td><td>Card grid gaps</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Fixed steps</h3>
+    <p class="sub-note">Inside components, snap to the s-scale rather than inventing values.</p>
+    <div class="spec-frame">
+      <div class="space-scale">
+        <div class="space-step"><i style="width: 4px;"></i><span>s1 · 4</span></div>
+        <div class="space-step"><i style="width: 8px;"></i><span>s2 · 8</span></div>
+        <div class="space-step"><i style="width: 13px;"></i><span>s3 · 13</span></div>
+        <div class="space-step"><i style="width: 19px;"></i><span>s4 · 19</span></div>
+        <div class="space-step"><i style="width: 26px;"></i><span>s5 · 26</span></div>
+        <div class="space-step"><i style="width: 35px;"></i><span>s6 · 35</span></div>
+        <div class="space-step"><i style="width: 48px;"></i><span>s7 · 48</span></div>
+        <div class="space-step"><i style="width: 64px;"></i><span>s8 · 64</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Shape</h3>
+      <p class="sub-note">One radius family: 18px for cards and media, 14px nested, 10px inputs — and the full pill for anything you press.</p>
+      <div class="spec-frame">
+        <div class="radius-row">
+          <div class="radius-demo" style="border-radius: 18px;">18 card</div>
+          <div class="radius-demo" style="border-radius: 14px;">14 nested</div>
+          <div class="radius-demo" style="border-radius: 10px;">10 input</div>
+          <div class="radius-demo" style="border-radius: 100px; width: 170px; height: 52px; place-items: center start; padding-left: 1.4rem;">100 pill</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">The mosaic grid</h3>
+      <p class="sub-note">Work grids use a 6-column mosaic: small cards span 2, features span 4. Media locks to <strong>3:2</strong>; grids collapse to full width under 640px.</p>
+      <div class="spec-frame">
+        <div class="mosaic-demo" aria-hidden="true">
+          <div class="s2">sz-s</div><div class="s4">sz-l</div>
+          <div class="s2">sz-t</div><div class="s2">sz-t</div><div class="s2">sz-t</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 MOTION ============ -->
+<section class="docs-section" id="motion">
+  <p class="sec-num">06 — Motion</p>
+  <h2 class="kd-title kd-reveal">Settle, don't <em>bounce.</em></h2>
+  <p class="sec-lede kd-reveal">All motion shares one personality: elements rise, unblur and settle — like a print coming into focus. One easing curve drives everything. Nothing bounces, nothing spins (except the mark, when it's earned).</p>
+
+  <div class="curve-demo sub-block">
+    <div>
+      <svg class="curve-plot" viewBox="0 0 200 200" width="100%" aria-label="The house easing curve">
+        <path d="M20 180 L180 20" stroke="var(--kd-line)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+        <path d="M20 180 C 55.2 68, 52 24.8, 180 20" stroke="#0339f8" stroke-width="3" fill="none"/>
+        <circle cx="20" cy="180" r="4" fill="var(--kd-text)"/><circle cx="180" cy="20" r="4" fill="#0339f8"/>
+      </svg>
+      <p class="spec-caption"><code>cubic-bezier(0.22, 0.7, 0.2, 1)</code> — fast out, long soft landing. Every eased transform on the brand uses this curve.</p>
+    </div>
+    <div>
+      <div class="motion-lane" id="lane1"><i></i></div>
+      <p class="spec-caption" style="margin: 0.5rem 0 1.2rem;">The house ease at 900ms.</p>
+      <div class="motion-lane" style="height: 90px;">
+        <p class="kd-heading motion-rise-demo" id="riseDemo" style="font-size: 1.7rem; position: absolute; inset: 0; display: grid; place-items: center;">Rise + <em>unblur</em></p>
+      </div>
+      <p class="spec-caption" style="margin-top: 0.5rem;">The signature entrance: <code>translateY(2rem) + blur(5px) → settled</code>.</p>
+      <button class="kd-btn kd-btn--ghost replay-btn" id="replayMotion">Replay motion</button>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Timing &amp; choreography</h3>
+    <div class="table-scroll spec-frame on-bg">
+      <table class="spec-table">
+        <thead><tr><th>Token</th><th>Duration</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td><code>--kd-t-fast</code></td><td>250ms</td><td>Colour, border and text-colour shifts</td></tr>
+          <tr><td><code>--kd-t-move</code></td><td>350ms</td><td>Hover lifts, arrow nudges, row indents</td></tr>
+          <tr><td><code>--kd-t-theme</code></td><td>400ms</td><td>Light ↔ dark cross-fade</td></tr>
+          <tr><td><code>--kd-t-media</code></td><td>800ms</td><td>Image zoom on card hover (scale 1.045)</td></tr>
+          <tr><td><code>--kd-t-reveal</code></td><td>900ms</td><td>Scroll reveals and page-load rises</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sub-note" style="margin-top: 1.4rem;">Choreography: page-load elements stagger at <strong>+150ms steps</strong> (kicker → title → sub → index). Hover feedback is immediate; entrances are slow. Under <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">prefers-reduced-motion</code> every animation is removed, not shortened.</p>
+  </div>
+</section>
+
+<!-- ============ 07 COMPONENTS ============ -->
+<section class="docs-section" id="components">
+  <p class="sec-num">07 — Components</p>
+  <h2 class="kd-title kd-reveal">The working <em>parts.</em></h2>
+  <p class="sec-lede kd-reveal">Live components, rendered from <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">kd.css</code>. Everything interactive is a pill; everything that contains is an 18px-radius card; everything metadata is a quiet uppercase tag.</p>
+
+  <div class="sub-block">
+    <h3>Buttons</h3>
+    <div class="spec-frame">
+      <div class="spec-row">
+        <button class="kd-btn">Start a project</button>
+        <button class="kd-btn kd-btn--ghost">All 35 projects</button>
+        <button class="kd-btn kd-btn--nav">Contact</button>
+        <button class="kd-btn" disabled>Disabled</button>
+      </div>
+      <p class="spec-caption">Primary lifts −2px on hover; nav CTA scales 1.05 instead. Ghost borrows the border, borrows blue on hover. Never more than one primary per view.</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Chips &amp; tags</h3>
+    <div class="spec-frame">
+      <div class="spec-row" style="margin-bottom: 1.2rem;">
+        <button class="kd-chip is-active">All</button>
+        <button class="kd-chip">Brand Identity</button>
+        <button class="kd-chip">Digital Design</button>
+        <button class="kd-chip">Campaigns</button>
+        <button class="kd-chip">Motion</button>
+      </div>
+      <div class="spec-row">
+        <span class="kd-tag">UX/UI</span>
+        <span class="kd-tag">Brand Architecture</span>
+        <span class="kd-tag kd-tag--glass">Glass tag · over media</span>
+      </div>
+      <p class="spec-caption">Chips filter (interactive, blue when active). Tags describe (static, never clickable). The glass variant sits on imagery — white at 62% with 12px blur.</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Pill navigation</h3>
+    <div class="spec-frame" style="display: grid; place-items: center; padding: 3rem 1rem;">
+      <nav class="kd-pillnav">
+        <a class="brand" href="#components" style="display: flex; align-items: center; height: 26px; padding: 0 0.9rem;" aria-label="KD home"><svg viewBox="0 0 18.62 11.73" style="height: 21px; width: auto;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="var(--kd-text)" points="0 0 0 11.72 6 5.86 0 0"/></svg></a>
+        <a class="kd-pillnav__link is-active" href="#components">Work</a>
+        <a class="kd-pillnav__link" href="#components">Services</a>
+        <a class="kd-pillnav__link" href="#components">About</a>
+        <a class="kd-btn kd-btn--nav" href="#components" style="margin-left: 0.2rem;">Contact</a>
+      </nav>
+      <p class="spec-caption" style="text-align: center; margin-top: 1.6rem;">Floats fixed, 2rem from the top, centred. Frosted glass (72% surface + 16px blur), full-pill radius, one soft shadow. On mobile it collapses to logo + hamburger with a full-screen overlay menu.</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Project card</h3>
+    <div class="doc-grid">
+      <a class="kd-projcard" href="#components">
+        <figure class="kd-projcard__media kd-media-ph" data-initial="M">
+          <div class="kd-projcard__tags"><span class="kd-tag kd-tag--glass">Brand Identity</span> <span class="kd-tag kd-tag--glass">Digital</span></div>
+        </figure>
+        <h4 class="kd-projcard__client">Mistara</h4>
+        <p class="kd-projcard__tagline">Ritual in Every Cup</p>
+      </a>
+      <div>
+        <p class="sub-note" style="margin-top: 0.4rem;">The workhorse of the portfolio. Anatomy, top to bottom:</p>
+        <div class="table-scroll">
+          <table class="spec-table">
+            <tbody>
+              <tr><td><strong>Media</strong></td><td>3:2, radius 18, video-first (muted loop, lazy). Hover zooms content to 1.045 over 800ms.</td></tr>
+              <tr><td><strong>Glass tags</strong></td><td>Top-left over media; hidden on mobile.</td></tr>
+              <tr><td><strong>Client</strong></td><td>1.05rem · 600.</td></tr>
+              <tr><td><strong>Tagline</strong></td><td>Muted; turns blue on hover — the whole card signals with one colour change.</td></tr>
+              <tr><td><strong>No media?</strong></td><td>Placeholder art: deep-blue radial gradient + giant italic initial at 18% paper.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Service row</h3>
+    <div class="spec-frame">
+      <a class="kd-svcrow" href="#components" style="border-top: 1px solid var(--kd-line);">
+        <span class="kd-svcrow__num">01</span>
+        <h4 class="kd-svcrow__title">Brand Strategy</h4>
+        <span class="kd-svcrow__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="kd-svcrow" href="#components">
+        <span class="kd-svcrow__num">02</span>
+        <h4 class="kd-svcrow__title">Identity &amp; Design Systems</h4>
+        <span class="kd-svcrow__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="kd-svcrow" href="#components" style="border-bottom: none;">
+        <span class="kd-svcrow__num">03</span>
+        <h4 class="kd-svcrow__title">Digital &amp; Performance Marketing</h4>
+        <span class="kd-svcrow__arrow" aria-hidden="true">→</span>
+      </a>
+      <p class="spec-caption">Hairline-divided list rows: blue index number, display title, quiet arrow. Hover indents the row 1.2rem and the arrow slides right in blue.</p>
+    </div>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Form fields</h3>
+      <div class="spec-frame">
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <label class="kd-field">Name<input type="text" placeholder="Your name"></label>
+          <label class="kd-field">Email<input type="email" value="hello@studio.ie"></label>
+          <label class="kd-field is-error">Budget<input type="text" value="—"><em class="kd-field__error">Please choose a budget range.</em></label>
+        </div>
+        <p class="spec-caption">Focus = blue border + 22% blue halo. Errors switch to Signal Red with a message below; never colour alone.</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Stats</h3>
+      <div class="spec-frame">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 2rem;">
+          <div class="kd-stat"><span class="kd-stat__big">15</span><p>years of design practice</p></div>
+          <div class="kd-stat"><span class="kd-stat__big">35</span><p>selected case studies</p></div>
+          <div class="kd-stat"><span class="kd-stat__big">4</span><p>continents of clients</p></div>
+        </div>
+        <p class="spec-caption">Big blue number (display 500), muted caption capped at 26ch. Numbers stay plain — no plus signs unless true.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Slider furniture &amp; dark surfaces</h3>
+    <div class="spec-frame on-ink">
+      <div class="spec-row" style="justify-content: space-between;">
+        <div class="kd-dots">
+          <button class="kd-dot is-active" aria-label="Slide 1"></button>
+          <button class="kd-dot" aria-label="Slide 2"></button>
+          <button class="kd-dot" aria-label="Slide 3"></button>
+        </div>
+        <div style="display: flex; gap: 0.7rem;">
+          <button class="kd-arrow" aria-label="Previous">←</button>
+          <button class="kd-arrow" aria-label="Next">→</button>
+        </div>
+      </div>
+      <p class="spec-caption" style="color: rgba(244,244,246,0.55);">On Scrim Ink surfaces: dots are 2.4rem × 3px bars (blue when active), arrows are 3rem ghost circles that borrow blue on hover.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 IMAGERY ============ -->
+<section class="docs-section" id="imagery">
+  <p class="sec-num">08 — Imagery</p>
+  <h2 class="kd-title kd-reveal">Work first, always in <em>motion.</em></h2>
+  <p class="sec-lede kd-reveal">Imagery is the work itself — mockups, screens, campaigns — ideally moving. No stock photography, no decorative imagery. Three treatments keep it consistent:</p>
+
+  <div class="sub-block">
+    <h3>1 · The hero scrim</h3>
+    <div class="scrim-demo kd-reveal">
+      <div class="art"></div>
+      <div class="scrim"></div>
+      <div class="st">
+        <span class="kd-label kicker">I design</span>
+        <span class="line">Brand Identity for Consumers</span>
+      </div>
+    </div>
+    <p class="spec-caption">Full-bleed media always carries the three-layer ink scrim (radial centre + 200° linear + left edge) so Paper White type stays legible on any footage. Statement pattern: label kicker + balanced display line.</p>
+  </div>
+
+  <div class="doc-grid sub-block">
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">2 · Placeholder art</h3>
+      <div class="kd-projcard__media kd-media-ph" data-initial="K" style="aspect-ratio: 3/2;"></div>
+      <p class="spec-caption">Missing media is never a grey box: deep-blue radial gradient (blue 45% top-left, deep #01145A bottom-right) with the client's initial, italic, at 18% paper opacity.</p>
+    </div>
+    <div>
+      <h3 style="font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.5rem;">3 · The portrait treatment</h3>
+      <div class="portrait-demo">
+        <svg viewBox="0 0 300 375" width="100%" style="position: absolute; inset: 0;" aria-hidden="true"><rect width="300" height="375" fill="#585e69"/><circle cx="150" cy="140" r="58" fill="#8f939d"/><path d="M60 375 Q150 240 240 375 Z" fill="#8f939d"/></svg>
+        <div class="tint"></div>
+      </div>
+      <p class="spec-caption">People are shown grayscale (contrast 1.05) with an Electric Blue colour-blend tint at 90% — the brand's one photographic filter. Portraits may be clipped by the chevron geometry of the mark.</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Media rules</h3>
+    <div class="dodont">
+      <div class="col yes">
+        <h4>Do</h4>
+        <ul>
+          <li><strong>Video-first</strong> — muted, looped, playsinline, lazy-loaded with a poster.</li>
+          <li><strong>Lock aspect ratios</strong> — 3:2 cards, 16:9 reels, 4:5 portraits.</li>
+          <li><strong>Round every frame</strong> — 18px, media never touches a sharp corner.</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h4>Don't</h4>
+        <ul>
+          <li>Use stock photography or generic "office" imagery.</li>
+          <li>Put text on media without the ink scrim.</li>
+          <li>Autoplay with sound, anywhere, ever.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 VOICE & TONE ============ -->
+<section class="docs-section" id="voice">
+  <p class="sec-num">09 — Voice &amp; Tone</p>
+  <h2 class="kd-title kd-reveal">Say it straight. Prove it <em>works.</em></h2>
+  <p class="sec-lede kd-reveal">KD speaks in first person, in short declarative sentences, about outcomes. The voice of a senior practitioner who does the work himself: confident without hype, warm without chat.</p>
+
+  <div class="voice-grid sub-block">
+    <div class="voice-card kd-reveal">
+      <h4>Direct</h4>
+      <p>"I make businesses clearer, more consistent, and easier to choose." Verbs first, outcomes second, no adverbs doing the heavy lifting.</p>
+    </div>
+    <div class="voice-card kd-reveal">
+      <h4>Evidence-led</h4>
+      <p>Claims come with receipts: 15 years, 35 case studies, 4 continents. If a number can carry the sentence, let it.</p>
+    </div>
+    <div class="voice-card kd-reveal">
+      <h4>Practitioner-first</h4>
+      <p>"I", never "we". KD is one person who stays hands-on from first workshop to final deployment — the copy should sound like it.</p>
+    </div>
+    <div class="voice-card kd-reveal">
+      <h4>Performance-framed</h4>
+      <p>Design is discussed as a business instrument: clarity, positioning, conversion, equity. "Identities, not logos." "Strategy comes before style."</p>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Signature constructions</h3>
+    <div class="table-scroll spec-frame on-bg">
+      <table class="spec-table">
+        <thead><tr><th>Pattern</th><th>Example</th><th>Where</th></tr></thead>
+        <tbody>
+          <tr><td>Two-beat statement</td><td>"Brands. Built to <span style="color: var(--kd-accent-text);">perform.</span>"</td><td>Heroes, campaign lines</td></tr>
+          <tr><td>"I design X for Y"</td><td>"I design Brand Identity for Consumers"</td><td>Slider statements, intros</td></tr>
+          <tr><td>Contrast pivot</td><td>"Most designers improve how you look. I improve how your business works."</td><td>Positioning copy</td></tr>
+          <tr><td>Triplet</td><td>"Clearer communication, better experiences, stronger performance."</td><td>Closers, summaries</td></tr>
+          <tr><td>Client tagline</td><td>"Ritual in Every Cup" · "Born of the Land"</td><td>Case studies — 3–6 words, title case</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Vocabulary</h3>
+    <div class="dodont">
+      <div class="col yes">
+        <h4>Say</h4>
+        <ul>
+          <li><strong>perform / performance</strong> — the brand's spine word</li>
+          <li><strong>clarity, consistency, positioning, touchpoint</strong></li>
+          <li><strong>identity systems</strong> (never "logo design")</li>
+          <li><strong>built, shipped, deployed</strong> — maker verbs</li>
+          <li>Irish English spelling: colour, organisation, optimise</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h4>Avoid</h4>
+        <ul>
+          <li>Agency-speak: "passionate", "award-winning", "synergy", "solutions provider"</li>
+          <li>Hedging: "we believe", "we strive to", "world-class"</li>
+          <li>Exclamation marks and emoji in brand copy</li>
+          <li>"We" — there is no we</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 ACCESSIBILITY ============ -->
+<section class="docs-section" id="a11y">
+  <p class="sec-num">10 — Accessibility</p>
+  <h2 class="kd-title kd-reveal">Performance includes <em>everyone.</em></h2>
+  <p class="sec-lede kd-reveal">Accessibility is part of the performance promise, not a compliance chore. These are the brand's non-negotiables:</p>
+
+  <div class="doc-grid sub-block">
+    <div class="kd-card kd-reveal">
+      <h4 style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Focus is loud</h4>
+      <p class="kd-muted" style="font-size: 0.95rem;">Every interactive element gets a 3px Electric Blue outline, offset 3px, on <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">:focus-visible</code>. A blue skip-link drops in on first Tab.</p>
+      <p style="margin-top: 1.2rem;"><button class="kd-btn kd-btn--ghost" style="outline: 3px solid var(--kd-blue); outline-offset: 3px;">Focused state</button></p>
+    </div>
+    <div class="kd-card kd-reveal">
+      <h4 style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Motion is optional</h4>
+      <p class="kd-muted" style="font-size: 0.95rem;"><code style="font-family: ui-monospace, monospace; font-size: 0.85em;">prefers-reduced-motion</code> removes the preloader, reveals, marquees and parallax entirely — content appears settled, never animated slower.</p>
+    </div>
+    <div class="kd-card kd-reveal">
+      <h4 style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Contrast holds in both themes</h4>
+      <p class="kd-muted" style="font-size: 0.95rem;">Body text ≥ AA in light and dark. Blue is display-only on dark backgrounds (see §03). Errors always pair colour with a written message.</p>
+    </div>
+    <div class="kd-card kd-reveal">
+      <h4 style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Semantics carry the design</h4>
+      <p class="kd-muted" style="font-size: 0.95rem;">Real buttons, labelled icon controls (<code style="font-family: ui-monospace, monospace; font-size: 0.85em;">aria-label</code>), alt text on client logos, decorative marquees hidden with <code style="font-family: ui-monospace, monospace; font-size: 0.85em;">aria-hidden</code>. Touch targets ≥ 40px.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 USING THE SYSTEM ============ -->
+<section class="docs-section" id="usage">
+  <p class="sec-num">11 — Using the System</p>
+  <h2 class="kd-title kd-reveal">Ship it <em>consistently.</em></h2>
+  <p class="sec-lede kd-reveal">The system is three files and zero dependencies. Drop the tokens in, scope the components, and the brand follows.</p>
+
+  <div class="sub-block">
+    <pre class="code"><span class="c">&lt;!-- 1 · Load the typeface --&gt;</span>
+&lt;link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"&gt;
+
+<span class="c">&lt;!-- 2 · Tokens first, then components --&gt;</span>
+&lt;link rel="stylesheet" href="css/tokens.css"&gt;
+&lt;link rel="stylesheet" href="css/kd.css"&gt;
+
+<span class="c">&lt;!-- 3 · Scope + theme --&gt;</span>
+&lt;body class="<span class="v">kd-scope</span>"&gt;            <span class="c">&lt;!-- light by default --&gt;</span>
+&lt;html data-theme="<span class="v">dark</span>"&gt;           <span class="c">&lt;!-- opt-in dark --&gt;</span>
+
+<span class="c">/* machine-readable tokens for Figma / Style Dictionary */</span>
+tokens.json</pre>
+  </div>
+
+  <div class="sub-block">
+    <h3>File map</h3>
+    <div class="table-scroll spec-frame on-bg">
+      <table class="spec-table">
+        <thead><tr><th>File</th><th>Contents</th></tr></thead>
+        <tbody>
+          <tr><td><code>css/tokens.css</code></td><td>Every design token as CSS custom properties, light + dark themes</td></tr>
+          <tr><td><code>css/kd.css</code></td><td>Component classes: <code>.kd-btn</code>, <code>.kd-chip</code>, <code>.kd-tag</code>, <code>.kd-pillnav</code>, <code>.kd-card</code>, <code>.kd-projcard</code>, <code>.kd-svcrow</code>, <code>.kd-field</code>, <code>.kd-stat</code>, motion primitives</td></tr>
+          <tr><td><code>tokens.json</code></td><td>W3C-format design tokens for tooling (Figma, Style Dictionary)</td></tr>
+          <tr><td><code>assets/kd-mark.svg</code></td><td>The mark, plus favicon variants</td></tr>
+          <tr><td><code>index.html</code></td><td>This document — the living guidelines</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sub-block">
+    <h3>Governance</h3>
+    <p class="sub-note">The portfolio site (<code style="font-family: ui-monospace, monospace; font-size: 0.85em;">kd-portfolio</code>) is the reference implementation. When the brand evolves: change the token here first, document it here second, roll it out third. If a new element can't be built from these tokens, that's a system conversation — not a one-off hex code.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="docs-foot">
+  <div class="cta">
+    <p class="kd-label kicker">KD Design System</p>
+    <h2 class="foot-title">One brand.<br>Every touchpoint. <em>Performing.</em></h2>
+  </div>
+  <div class="cols">
+    <div class="col">
+      <svg viewBox="0 0 18.62 11.73" style="height: 14px; width: auto;" xmlns="http://www.w3.org/2000/svg" aria-label="KD"><polygon fill="#0339f8" points="18.62 0 12 0 6 5.86 12 11.73 18.62 11.73 12.62 5.86 18.62 0"/><polygon fill="#eceef2" points="0 0 0 11.72 6 5.86 0 0"/></svg>
+      <span>© <span id="year"></span> Kieran Duffy · Dublin, Ireland</span>
+    </div>
+    <div class="col">
+      <span class="colhead">System</span>
+      <a href="#mark">The Mark</a>
+      <a href="#colour">Colour</a>
+      <a href="#type">Typography</a>
+      <a href="#components">Components</a>
+    </div>
+    <div class="col">
+      <span class="colhead">Practice</span>
+      <a href="#voice">Voice &amp; Tone</a>
+      <a href="#a11y">Accessibility</a>
+      <a href="#usage">Using the System</a>
+    </div>
+    <div class="col">
+      <span class="colhead">Contact</span>
+      <a href="mailto:kieranduffy87@gmail.com">kieranduffy87@gmail.com</a>
+      <span>v1.0 · July 2026</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite">Copied</div>
+<script src="js/docs.js"></script>
+</body>
+</html>
